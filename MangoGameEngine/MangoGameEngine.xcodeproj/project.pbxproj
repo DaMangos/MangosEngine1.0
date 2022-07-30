@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFD19886288F44CA00552861 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD19885288F44CA00552861 /* main.cpp */; };
+		FFD1989B288F47DF00552861 /* MGE_Matrices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD19899288F47DF00552861 /* MGE_Matrices.cpp */; };
+		FFD1989E288F47F800552861 /* MGE_Vectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD1989C288F47F800552861 /* MGE_Vectors.cpp */; };
+		FFD198A5288FEB4F00552861 /* MGE_Stereometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198A3288FEB4F00552861 /* MGE_Stereometry.cpp */; };
+		FFD198A8288FEBC500552861 /* MGE_Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198A6288FEBC500552861 /* MGE_Geometry.cpp */; };
+		FFD198AC28900B1100552861 /* MGE_Spawnable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198AA28900B1100552861 /* MGE_Spawnable.cpp */; };
+		FFD198B328900C1100552861 /* MGE_sCamara.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198B128900C1100552861 /* MGE_sCamara.cpp */; };
+		FFD198BD28900D0C00552861 /* MGE_sObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198BB28900D0C00552861 /* MGE_sObject.cpp */; };
+		FFD198C0289024B000552861 /* MGE_World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198BE289024B000552861 /* MGE_World.cpp */; };
+		FFD198C5289025F300552861 /* MGE_sLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198C3289025F300552861 /* MGE_sLight.cpp */; };
+		FFD198D72893EF3500552861 /* MGE_Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198D52893EF3500552861 /* MGE_Vertex.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFD19882288F44CA00552861 /* MangoGameEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MangoGameEngine; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD19885288F44CA00552861 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FFD19891288F45B200552861 /* MangoGameEngine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MangoGameEngine.entitlements; sourceTree = "<group>"; };
+		FFD19899288F47DF00552861 /* MGE_Matrices.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Matrices.cpp; sourceTree = "<group>"; };
+		FFD1989A288F47DF00552861 /* MGE_Matrices.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_Matrices.hpp; sourceTree = "<group>"; };
+		FFD1989C288F47F800552861 /* MGE_Vectors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Vectors.cpp; sourceTree = "<group>"; };
+		FFD1989D288F47F800552861 /* MGE_Vectors.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_Vectors.hpp; sourceTree = "<group>"; };
+		FFD1989F288F4A9900552861 /* MGE_MathsLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGE_MathsLibrary.h; sourceTree = "<group>"; };
+		FFD198A3288FEB4F00552861 /* MGE_Stereometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Stereometry.cpp; sourceTree = "<group>"; };
+		FFD198A4288FEB4F00552861 /* MGE_Stereometry.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_Stereometry.hpp; sourceTree = "<group>"; };
+		FFD198A6288FEBC500552861 /* MGE_Geometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Geometry.cpp; sourceTree = "<group>"; };
+		FFD198A7288FEBC500552861 /* MGE_Geometry.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_Geometry.hpp; sourceTree = "<group>"; };
+		FFD198A928900AD400552861 /* MGE_Spawnable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGE_Spawnable.h; sourceTree = "<group>"; };
+		FFD198AA28900B1100552861 /* MGE_Spawnable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Spawnable.cpp; sourceTree = "<group>"; };
+		FFD198AB28900B1100552861 /* MGE_Spawnable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_Spawnable.hpp; sourceTree = "<group>"; };
+		FFD198B128900C1100552861 /* MGE_sCamara.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_sCamara.cpp; sourceTree = "<group>"; };
+		FFD198B228900C1100552861 /* MGE_sCamara.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_sCamara.hpp; sourceTree = "<group>"; };
+		FFD198BB28900D0C00552861 /* MGE_sObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_sObject.cpp; sourceTree = "<group>"; };
+		FFD198BC28900D0C00552861 /* MGE_sObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_sObject.hpp; sourceTree = "<group>"; };
+		FFD198BE289024B000552861 /* MGE_World.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_World.cpp; sourceTree = "<group>"; };
+		FFD198BF289024B000552861 /* MGE_World.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_World.hpp; sourceTree = "<group>"; };
+		FFD198C3289025F300552861 /* MGE_sLight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_sLight.cpp; sourceTree = "<group>"; };
+		FFD198C4289025F300552861 /* MGE_sLight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_sLight.hpp; sourceTree = "<group>"; };
+		FFD198D52893EF3500552861 /* MGE_Vertex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Vertex.cpp; sourceTree = "<group>"; };
+		FFD198D62893EF3500552861 /* MGE_Vertex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_Vertex.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFD19880288F44CA00552861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFD1987A288F44CA00552861 = {
+			isa = PBXGroup;
+			children = (
+				FFD19884288F44CA00552861 /* MangoGameEngine */,
+				FFD19883288F44CA00552861 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFD19883288F44CA00552861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFD19882288F44CA00552861 /* MangoGameEngine */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFD19884288F44CA00552861 /* MangoGameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				FFD198C1289024E200552861 /* MGE_Worlds */,
+				FFD19895288F46D900552861 /* MGE_Libraries */,
+				FFD19894288F467D00552861 /* MGE_Graphics */,
+				FFD19891288F45B200552861 /* MangoGameEngine.entitlements */,
+				FFD19885288F44CA00552861 /* main.cpp */,
+			);
+			path = MangoGameEngine;
+			sourceTree = "<group>";
+		};
+		FFD19894288F467D00552861 /* MGE_Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				FFD198D52893EF3500552861 /* MGE_Vertex.cpp */,
+				FFD198D62893EF3500552861 /* MGE_Vertex.hpp */,
+			);
+			path = MGE_Graphics;
+			sourceTree = "<group>";
+		};
+		FFD19895288F46D900552861 /* MGE_Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FFD19897288F473100552861 /* MGE_MathsLibrary */,
+			);
+			path = MGE_Libraries;
+			sourceTree = "<group>";
+		};
+		FFD19897288F473100552861 /* MGE_MathsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				FFD1989F288F4A9900552861 /* MGE_MathsLibrary.h */,
+				FFD1989C288F47F800552861 /* MGE_Vectors.cpp */,
+				FFD1989D288F47F800552861 /* MGE_Vectors.hpp */,
+				FFD19899288F47DF00552861 /* MGE_Matrices.cpp */,
+				FFD1989A288F47DF00552861 /* MGE_Matrices.hpp */,
+				FFD198A6288FEBC500552861 /* MGE_Geometry.cpp */,
+				FFD198A7288FEBC500552861 /* MGE_Geometry.hpp */,
+				FFD198A3288FEB4F00552861 /* MGE_Stereometry.cpp */,
+				FFD198A4288FEB4F00552861 /* MGE_Stereometry.hpp */,
+			);
+			path = MGE_MathsLibrary;
+			sourceTree = "<group>";
+		};
+		FFD19898288F475D00552861 /* MGE_Spawnables */ = {
+			isa = PBXGroup;
+			children = (
+				FFD198BA28900CF900552861 /* MGE_sObject */,
+				FFD198C2289025D800552861 /* MGE_sLights */,
+				FFD198B028900BEC00552861 /* MGE_sCamara */,
+				FFD198A928900AD400552861 /* MGE_Spawnable.h */,
+				FFD198AA28900B1100552861 /* MGE_Spawnable.cpp */,
+				FFD198AB28900B1100552861 /* MGE_Spawnable.hpp */,
+			);
+			path = MGE_Spawnables;
+			sourceTree = "<group>";
+		};
+		FFD198B028900BEC00552861 /* MGE_sCamara */ = {
+			isa = PBXGroup;
+			children = (
+				FFD198B128900C1100552861 /* MGE_sCamara.cpp */,
+				FFD198B228900C1100552861 /* MGE_sCamara.hpp */,
+			);
+			path = MGE_sCamara;
+			sourceTree = "<group>";
+		};
+		FFD198BA28900CF900552861 /* MGE_sObject */ = {
+			isa = PBXGroup;
+			children = (
+				FFD198BB28900D0C00552861 /* MGE_sObject.cpp */,
+				FFD198BC28900D0C00552861 /* MGE_sObject.hpp */,
+			);
+			path = MGE_sObject;
+			sourceTree = "<group>";
+		};
+		FFD198C1289024E200552861 /* MGE_Worlds */ = {
+			isa = PBXGroup;
+			children = (
+				FFD19898288F475D00552861 /* MGE_Spawnables */,
+				FFD198BE289024B000552861 /* MGE_World.cpp */,
+				FFD198BF289024B000552861 /* MGE_World.hpp */,
+			);
+			path = MGE_Worlds;
+			sourceTree = "<group>";
+		};
+		FFD198C2289025D800552861 /* MGE_sLights */ = {
+			isa = PBXGroup;
+			children = (
+				FFD198C3289025F300552861 /* MGE_sLight.cpp */,
+				FFD198C4289025F300552861 /* MGE_sLight.hpp */,
+			);
+			path = MGE_sLights;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFD19881288F44CA00552861 /* MangoGameEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD1988E288F44CA00552861 /* Build configuration list for PBXNativeTarget "MangoGameEngine" */;
+			buildPhases = (
+				FFD1987F288F44CA00552861 /* Sources */,
+				FFD19880288F44CA00552861 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MangoGameEngine;
+			productName = MangoGameEngine;
+			productReference = FFD19882288F44CA00552861 /* MangoGameEngine */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFD1987B288F44CA00552861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "Oliver Horrigan-Pierre";
+				TargetAttributes = {
+					FFD19881288F44CA00552861 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FFD1987E288F44CA00552861 /* Build configuration list for PBXProject "MangoGameEngine" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFD1987A288F44CA00552861;
+			productRefGroup = FFD19883288F44CA00552861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFD19881288F44CA00552861 /* MangoGameEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFD1987F288F44CA00552861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD1989E288F47F800552861 /* MGE_Vectors.cpp in Sources */,
+				FFD198AC28900B1100552861 /* MGE_Spawnable.cpp in Sources */,
+				FFD198BD28900D0C00552861 /* MGE_sObject.cpp in Sources */,
+				FFD198A5288FEB4F00552861 /* MGE_Stereometry.cpp in Sources */,
+				FFD198B328900C1100552861 /* MGE_sCamara.cpp in Sources */,
+				FFD198A8288FEBC500552861 /* MGE_Geometry.cpp in Sources */,
+				FFD19886288F44CA00552861 /* main.cpp in Sources */,
+				FFD198C0289024B000552861 /* MGE_World.cpp in Sources */,
+				FFD198D72893EF3500552861 /* MGE_Vertex.cpp in Sources */,
+				FFD198C5289025F300552861 /* MGE_sLight.cpp in Sources */,
+				FFD1989B288F47DF00552861 /* MGE_Matrices.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FFD1988C288F44CA00552861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		FFD1988D288F44CA00552861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		FFD1988F288F44CA00552861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_ENTITLEMENTS = MangoGameEngine/MangoGameEngine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3Y29BCYSK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFD19890288F44CA00552861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_ENTITLEMENTS = MangoGameEngine/MangoGameEngine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3Y29BCYSK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFD1987E288F44CA00552861 /* Build configuration list for PBXProject "MangoGameEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD1988C288F44CA00552861 /* Debug */,
+				FFD1988D288F44CA00552861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD1988E288F44CA00552861 /* Build configuration list for PBXNativeTarget "MangoGameEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD1988F288F44CA00552861 /* Debug */,
+				FFD19890288F44CA00552861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFD1987B288F44CA00552861 /* Project object */;
+}
