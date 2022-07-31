@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "MGE_sObject.hpp"
+#include <iostream>
 
 namespace mge
 {
@@ -34,18 +35,17 @@ class sCamera: public Spawnable
     
     bool IsTriangleVisable(const Plane3f& triangle) const;
     
+    std::vector<Triangle2f> ClipTriangleAgainstBoundary(const Triangle2f& triangle, const Line2f& Boundary) const;
+    
+public:
     Vector2f GetVertexPojection(const Vector3f& world_vertex_location) const;
 
-    
-    
     std::vector<Plane3f> GetVisableTriangles(const std::vector<sObject>& scene);
         
     Triangle2f GetTrianglePojection(const Plane3f& triangle) const;
-    
-    std::vector<Triangle2f> ClipTriangle(const Triangle2f& triangle);
         
-public:
-    
+    std::vector<Triangle2f> ClipTriangles(const Triangle2f& triangle) const;
+        
     sCamera(unsigned int window_width, unsigned int window_hight, float field_of_view, float render_distance);
 };
 }

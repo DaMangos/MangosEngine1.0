@@ -10,11 +10,11 @@
 
 namespace mge
 {
-Spawnable::Spawnable(Vector3f world_location, Vector3f world_rotation, Vector3f world_scale)
+Spawnable::Spawnable()
 {
-    this->world_location = world_location;
-    this->world_rotation = vmod(world_rotation, Vector3f(2.0f * pi, 2.0f * pi, 2.0f * pi));
-    this->world_scale    = vabs(world_scale);
+    this->world_location = Vector3f(0.0f, 0.0f, 0.0f);
+    this->world_rotation = Vector3f(0.0f, 0.0f, 0.0f);
+    this->world_scale    = Vector3f(1.0f, 1.0f, 1.0f);
 }
 
 

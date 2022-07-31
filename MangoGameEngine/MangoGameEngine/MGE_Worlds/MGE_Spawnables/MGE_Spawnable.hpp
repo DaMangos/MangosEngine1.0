@@ -26,7 +26,7 @@ public:
     
     
     
-    Spawnable(Vector3f world_location = Vector3f(), Vector3f world_rotation = Vector3f(), Vector3f world_scale = Vector3f());
+    Spawnable();
 
     
     

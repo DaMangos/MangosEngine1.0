@@ -38,7 +38,7 @@ struct Plane3f
     Vector3f point[3];
     
     
-        
+    
     Plane3f(Vector3f point_0 = Vector3f(), Vector3f point_1 = Vector3f(), Vector3f point_2 = Vector3f());
     
     

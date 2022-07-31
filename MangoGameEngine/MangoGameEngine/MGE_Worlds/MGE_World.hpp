@@ -18,11 +18,11 @@ class World
 {
 public:
     
-    std::vector<sObject> object;
+    std::vector<sObject> objects;
     
-    std::vector<sCamera> camara;
+    std::vector<sCamera> camaras;
 
-    std::vector<sLight> light;
+    std::vector<sLight> lights;
 };
 }
 

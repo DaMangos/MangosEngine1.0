@@ -17,7 +17,6 @@
 		FFD198BD28900D0C00552861 /* MGE_sObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198BB28900D0C00552861 /* MGE_sObject.cpp */; };
 		FFD198C0289024B000552861 /* MGE_World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198BE289024B000552861 /* MGE_World.cpp */; };
 		FFD198C5289025F300552861 /* MGE_sLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198C3289025F300552861 /* MGE_sLight.cpp */; };
-		FFD198D72893EF3500552861 /* MGE_Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198D52893EF3500552861 /* MGE_Vertex.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +43,7 @@
 		FFD198BF289024B000552861 /* MGE_World.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_World.hpp; sourceTree = "<group>"; };
 		FFD198C3289025F300552861 /* MGE_sLight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_sLight.cpp; sourceTree = "<group>"; };
 		FFD198C4289025F300552861 /* MGE_sLight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_sLight.hpp; sourceTree = "<group>"; };
-		FFD198D52893EF3500552861 /* MGE_Vertex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Vertex.cpp; sourceTree = "<group>"; };
-		FFD198D62893EF3500552861 /* MGE_Vertex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_Vertex.hpp; sourceTree = "<group>"; };
+		FFD198F32895FBB300552861 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +60,7 @@
 		FFD1987A288F44CA00552861 = {
 			isa = PBXGroup;
 			children = (
+				FFD198F32895FBB300552861 /* Header.h */,
 				FFD19884288F44CA00552861 /* MangoGameEngine */,
 				FFD19883288F44CA00552861 /* Products */,
 			);
@@ -80,20 +79,10 @@
 			children = (
 				FFD198C1289024E200552861 /* MGE_Worlds */,
 				FFD19895288F46D900552861 /* MGE_Libraries */,
-				FFD19894288F467D00552861 /* MGE_Graphics */,
 				FFD19891288F45B200552861 /* MangoGameEngine.entitlements */,
 				FFD19885288F44CA00552861 /* main.cpp */,
 			);
 			path = MangoGameEngine;
-			sourceTree = "<group>";
-		};
-		FFD19894288F467D00552861 /* MGE_Graphics */ = {
-			isa = PBXGroup;
-			children = (
-				FFD198D52893EF3500552861 /* MGE_Vertex.cpp */,
-				FFD198D62893EF3500552861 /* MGE_Vertex.hpp */,
-			);
-			path = MGE_Graphics;
 			sourceTree = "<group>";
 		};
 		FFD19895288F46D900552861 /* MGE_Libraries */ = {
@@ -235,7 +224,6 @@
 				FFD198A8288FEBC500552861 /* MGE_Geometry.cpp in Sources */,
 				FFD19886288F44CA00552861 /* main.cpp in Sources */,
 				FFD198C0289024B000552861 /* MGE_World.cpp in Sources */,
-				FFD198D72893EF3500552861 /* MGE_Vertex.cpp in Sources */,
 				FFD198C5289025F300552861 /* MGE_sLight.cpp in Sources */,
 				FFD1989B288F47DF00552861 /* MGE_Matrices.cpp in Sources */,
 			);

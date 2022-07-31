@@ -36,6 +36,6 @@ Plane3f sObject::GetMeshTriangle(int i)
         }
     }
     
-    return result;
+    return this->mesh.at(i);
 }
 }

@@ -25,10 +25,10 @@ Vector2f Line2f::GetDirection() const
 
 Vector2f Line2f::GetPointOnLine(float t) const
 {
-    return this->point[0] + (this->GetDirection() * t);
+    return this->point[0] + ((this->point[1] - this->point[0]) * t);
 }
 
-float Line2f::SignedShortestDistance(const Vector2f& A)
+float Line2f::SignedShortestDistance(const Vector2f& A) const
 {
     return Determinant(Matrix2x2f(A - this->point[0], this->point[1] - this->point[0]));
 }
@@ -46,7 +46,7 @@ Triangle2f::Triangle2f(Vector2f vertex_0, Vector2f vertex_1, Vector2f vertex_2)
 
 Vector2f Triangle2f::GetCenter()
 {
-    return (this->vertex[0] + this->vertex[0] + this->vertex[0]) / 3.0f;
+    return (this->vertex[0] + this->vertex[1] + this->vertex[2]) / 3.0f;
 }
 
 bool Triangle2f::IsInside(Vector2f A)
@@ -72,7 +72,22 @@ bool Triangle2f::IsInside(Vector2f A)
 
 Vector2f TwoLine2fIntersection(const Line2f& line_0, const Line2f& line_1)
 {
-    return line_0.GetPointOnLine(Determinant(Matrix2x2f(line_1.GetDirection(), line_0.point[0] - line_1.point[0])) /
-                                 Determinant(Matrix2x2f(line_1.GetDirection(), line_0.GetDirection())));
+    Vector2f value;
+    
+    float x1 = line_0.point[0].x;
+    float y1 = line_0.point[0].y;
+    
+    float x2 = line_0.point[1].x;
+    float y2 = line_0.point[1].y;
+    
+    float x3 = line_1.point[0].x;
+    float y3 = line_1.point[0].y;
+    
+    float x4 = line_1.point[1].x;
+    float y4 = line_1.point[1].y;
+    
+    
+    return line_0.GetPointOnLine(Determinant(Matrix2x2f(x1 - x3, x3 - x4, y1 - y3, y3 - y4)) /
+                                 Determinant(Matrix2x2f(x1 - x2, x3 - x4, y1 - y2, y3 - y4)));
 }
 }

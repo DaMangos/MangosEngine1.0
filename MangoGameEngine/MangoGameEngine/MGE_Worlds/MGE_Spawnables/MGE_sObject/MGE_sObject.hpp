@@ -22,6 +22,8 @@ public:
     std::vector<Plane3f> mesh;
     
     Plane3f GetMeshTriangle(int index);
+    
+    std::vector<Plane3f>GetWorldMesh();
 };
 }
 

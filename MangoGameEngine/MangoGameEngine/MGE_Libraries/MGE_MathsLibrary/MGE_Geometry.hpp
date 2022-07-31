@@ -28,7 +28,7 @@ struct Line2f
     
     Vector2f GetPointOnLine(float t) const;
     
-    float SignedShortestDistance(const Vector2f& A);
+    float SignedShortestDistance(const Vector2f& A) const;
 };
 
 

@@ -53,14 +53,14 @@ Plane3f::Plane3f(Vector3f point_0, Vector3f point_1, Vector3f point_2)
 {
     this->point[0] = point_0;
     this->point[1] = point_1;
-    this->point[2] = point_1;
+    this->point[2] = point_2;
 }
 
 
 
 Vector3f Plane3f::GetNormal() const
 {
-    return Normalize(CrossProduct(this->point[1] - this->point[0], this->point[1] - this->point[0]));
+    return Normalize(CrossProduct(this->point[1] - this->point[0], this->point[2] - this->point[0]));
 }
 
 Vector3f Plane3f::GetCenter() const
