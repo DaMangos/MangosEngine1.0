@@ -20,9 +20,7 @@ public:
     
     std::vector<sObject> objects;
     
-    std::vector<sCamera> camaras;
-
-    std::vector<sLight> lights;
+    std::vector<sCamera> cameras;
 };
 }
 

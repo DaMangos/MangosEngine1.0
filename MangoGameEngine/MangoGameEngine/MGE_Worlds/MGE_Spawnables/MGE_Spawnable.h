@@ -13,7 +13,6 @@
 
 #include "MGE_Spawnable.hpp"
 #include "MGE_sObject.hpp"
-#include "MGE_sLight.hpp"
 #include "MGE_sCamara.hpp"
 
 

@@ -16,7 +16,6 @@
 		FFD198B328900C1100552861 /* MGE_sCamara.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198B128900C1100552861 /* MGE_sCamara.cpp */; };
 		FFD198BD28900D0C00552861 /* MGE_sObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198BB28900D0C00552861 /* MGE_sObject.cpp */; };
 		FFD198C0289024B000552861 /* MGE_World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198BE289024B000552861 /* MGE_World.cpp */; };
-		FFD198C5289025F300552861 /* MGE_sLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD198C3289025F300552861 /* MGE_sLight.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +40,6 @@
 		FFD198BC28900D0C00552861 /* MGE_sObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_sObject.hpp; sourceTree = "<group>"; };
 		FFD198BE289024B000552861 /* MGE_World.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_World.cpp; sourceTree = "<group>"; };
 		FFD198BF289024B000552861 /* MGE_World.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_World.hpp; sourceTree = "<group>"; };
-		FFD198C3289025F300552861 /* MGE_sLight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_sLight.cpp; sourceTree = "<group>"; };
-		FFD198C4289025F300552861 /* MGE_sLight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MGE_sLight.hpp; sourceTree = "<group>"; };
-		FFD198F32895FBB300552861 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +56,6 @@
 		FFD1987A288F44CA00552861 = {
 			isa = PBXGroup;
 			children = (
-				FFD198F32895FBB300552861 /* Header.h */,
 				FFD19884288F44CA00552861 /* MangoGameEngine */,
 				FFD19883288F44CA00552861 /* Products */,
 			);
@@ -113,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				FFD198BA28900CF900552861 /* MGE_sObject */,
-				FFD198C2289025D800552861 /* MGE_sLights */,
 				FFD198B028900BEC00552861 /* MGE_sCamara */,
 				FFD198A928900AD400552861 /* MGE_Spawnable.h */,
 				FFD198AA28900B1100552861 /* MGE_Spawnable.cpp */,
@@ -148,15 +142,6 @@
 				FFD198BF289024B000552861 /* MGE_World.hpp */,
 			);
 			path = MGE_Worlds;
-			sourceTree = "<group>";
-		};
-		FFD198C2289025D800552861 /* MGE_sLights */ = {
-			isa = PBXGroup;
-			children = (
-				FFD198C3289025F300552861 /* MGE_sLight.cpp */,
-				FFD198C4289025F300552861 /* MGE_sLight.hpp */,
-			);
-			path = MGE_sLights;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +209,6 @@
 				FFD198A8288FEBC500552861 /* MGE_Geometry.cpp in Sources */,
 				FFD19886288F44CA00552861 /* main.cpp in Sources */,
 				FFD198C0289024B000552861 /* MGE_World.cpp in Sources */,
-				FFD198C5289025F300552861 /* MGE_sLight.cpp in Sources */,
 				FFD1989B288F47DF00552861 /* MGE_Matrices.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

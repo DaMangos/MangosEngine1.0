@@ -8,6 +8,7 @@
 
 #include "MGE_sCamara.hpp"
 
+
 namespace mge
 {
 sCamera::sCamera(unsigned int window_width, unsigned int window_hight, float field_of_view, float render_distance)
@@ -16,7 +17,62 @@ sCamera::sCamera(unsigned int window_width, unsigned int window_hight, float fie
     this->window_hight    = (float)window_hight;
     this->field_of_view   = fmod(field_of_view, (pi / 2.0f) - (2.0f * (pi / 180.f)) + (pi / 180.f));
     this->render_distance = fmax(render_distance, 2.0f * GetFocalLength());
+    this->world_rotation  = mge::Vector3f(0.0f, pi / 2.0f, 0.0f);
 }
+
+
+
+std::vector<Plane3f> sCamera::GetVisableTrianglesWorld(const std::vector<sObject>& scene) const
+{
+    std::vector<Plane3f> visable_triangles;
+    
+    for (auto object: scene)
+    {
+        int number_of_triangles = object.mesh.size();
+        
+        for (int i = 0; i < number_of_triangles; i++)
+        {
+            if (this->IsTriangleVisable(object.GetMeshTriangle(i)))
+            {
+                Plane3f visable_triangle;
+                
+                for (int j = 0; j < 3; j++)
+                {
+                    visable_triangle.point[j] = object.GetMeshTriangle(i).point[j] - this->world_location;
+                }
+                visable_triangles.emplace_back(visable_triangle);
+            }
+        }
+    }
+
+    
+    std::sort(visable_triangles.begin(), visable_triangles.end(), [](const Plane3f& A, const Plane3f& B)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            Vector3f point_intersection = Plane3fLine3fIntersection(B, Line3f(A.point[i]));
+            
+            if (B.ReduceDimensionsOfPoints().IsInside(B.ReduceDimensions(point_intersection)))
+            {
+                if (point_intersection.GetLength() < A.point[i].GetLength())
+                {
+                    return true;
+                }
+            }
+        }
+        
+        return false;
+    });
+    
+    return visable_triangles;
+}
+
+std::vector<Triangle2f> sCamera::GetVisableTrianglesScreen(const Plane3f& visable_triangle_world) const
+{
+    return this->GetClipTriangles(this->GetTrianglePojection(visable_triangle_world));
+}
+
+
 
 float sCamera::GetFocalLength() const
 {
@@ -98,51 +154,6 @@ bool sCamera::IsTriangleVisable(const Plane3f& triangle) const
     return true;
 }
 
-std::vector<Plane3f> sCamera::GetVisableTriangles(const std::vector<sObject>& scene)
-{
-    std::vector<Plane3f> visable_triangles;
-    
-    for (auto object: scene)
-    {
-        int number_of_triangles = object.mesh.size();
-        
-        for (int i = 0; i < number_of_triangles; i++)
-        {
-            if (this->IsTriangleVisable(object.GetMeshTriangle(i)))
-            {
-                Plane3f visable_triangle;
-                
-                for (int j = 0; j < 3; j++)
-                {
-                    visable_triangle.point[j] = object.GetMeshTriangle(i).point[j] - this->world_location;
-                }
-                
-                visable_triangles.emplace_back(visable_triangle);
-            }
-        }
-    }
-
-    std::sort(visable_triangles.begin(), visable_triangles.end(), [](const Plane3f& A, const Plane3f& B)
-    {
-        for (int i = 0; i < 3; i++)
-        {
-            Vector3f point_intersection = Plane3fLine3fIntersection(B, Line3f(A.point[i]));
-            
-            if (B.ReduceDimensionsOfPoints().IsInside(B.ReduceDimensions(point_intersection)))
-            {
-                if (point_intersection.GetLength() < A.point[i].GetLength())
-                {
-                    return true;
-                }
-            }
-        }
-        
-        return false;
-    });
-    
-    return visable_triangles;
-}
-
 std::vector<Triangle2f> sCamera::ClipTriangleAgainstBoundary(const Triangle2f& triangle, const Line2f& boundary) const
 {
     std::vector<Triangle2f> result;
@@ -202,7 +213,7 @@ std::vector<Triangle2f> sCamera::ClipTriangleAgainstBoundary(const Triangle2f& t
     return result;
 }
 
-std::vector<Triangle2f> sCamera::ClipTriangles(const Triangle2f& triangle) const
+std::vector<Triangle2f> sCamera::GetClipTriangles(const Triangle2f& triangle) const
 {
     std::vector<Triangle2f> result;
     
@@ -238,7 +249,7 @@ std::vector<Triangle2f> sCamera::ClipTriangles(const Triangle2f& triangle) const
     }
     
     return result;
-
 }
+
 
 }
