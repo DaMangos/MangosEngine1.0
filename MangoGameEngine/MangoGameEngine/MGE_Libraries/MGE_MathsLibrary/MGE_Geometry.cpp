@@ -28,11 +28,6 @@ Vector2f Line2f::GetPointOnLine(float t) const
     return this->point[0] + ((this->point[1] - this->point[0]) * t);
 }
 
-float Line2f::SignedShortestDistance(const Vector2f& A) const
-{
-    return Determinant(Matrix2x2f(A - this->point[0], this->point[1] - this->point[0]));
-}
-
 
 
 Triangle2f::Triangle2f(Vector2f vertex_0, Vector2f vertex_1, Vector2f vertex_2)
@@ -89,5 +84,10 @@ Vector2f TwoLine2fIntersection(const Line2f& line_0, const Line2f& line_1)
     
     return line_0.GetPointOnLine(Determinant(Matrix2x2f(x1 - x3, x3 - x4, y1 - y3, y3 - y4)) /
                                  Determinant(Matrix2x2f(x1 - x2, x3 - x4, y1 - y2, y3 - y4)));
+}
+
+float SignedShortestDistanceLine(const Line2f& line, const Vector2f& point)
+{
+    return Determinant(Matrix2x2f(point - line.point[0], line.point[1] - line.point[0]));
 }
 }

@@ -72,8 +72,6 @@ std::vector<Triangle2f> sCamera::GetVisableTrianglesScreen(const Plane3f& visabl
     return this->GetClipTriangles(this->GetTrianglePojection(visable_triangle_world));
 }
 
-
-
 float sCamera::GetFocalLength() const
 {
     float aspect_raito = this->window_hight / this->window_width;
@@ -144,9 +142,9 @@ bool sCamera::IsTriangleVisable(const Plane3f& triangle) const
         return false;
     }
     
-    if ((triangle.point[0] - this->world_location).GetLength() < this->GetFocalLength() ||
-        (triangle.point[1] - this->world_location).GetLength() < this->GetFocalLength() ||
-        (triangle.point[2] - this->world_location).GetLength() < this->GetFocalLength())
+    if (SignedShortedDistancePlane(this->GetLensNormal(), this->world_location, triangle.point[0]) < 0.0f ||
+        SignedShortedDistancePlane(this->GetLensNormal(), this->world_location, triangle.point[1]) < 0.0f ||
+        SignedShortedDistancePlane(this->GetLensNormal(), this->world_location, triangle.point[2]) < 0.0f)
     {
         return false;
     }
@@ -164,7 +162,7 @@ std::vector<Triangle2f> sCamera::ClipTriangleAgainstBoundary(const Triangle2f& t
     
     for (int j = 0; j < 3; j++)
     {
-        if (boundary.SignedShortestDistance(triangle.vertex[j]) < 0.0f)
+        if (SignedShortestDistanceLine(boundary, triangle.vertex[j]) < 0.0f)
         {
             is_vertex_visable[j] = true;
             

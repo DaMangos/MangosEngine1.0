@@ -62,5 +62,7 @@ struct Plane3f
 Vector3f Plane3fLine3fIntersection(const Plane3f& plane, const Line3f& line);
 
 Vector3f Plane3fLine3fIntersection(const Vector3f& plane_normal, const Vector3f& plane_point, const Line3f& line);
+
+float SignedShortedDistancePlane(const Vector3f& plane_normal, const Vector3f& plane_point, const Vector3f& point);
 }
 #endif /* MGE_Stereometry_hpp */

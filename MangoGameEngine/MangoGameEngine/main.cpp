@@ -4,28 +4,75 @@
 
 int main()
 {
+    float A = 0.0f;
+    
     sf::RenderWindow window(sf::VideoMode(1500, 1500), "Mangos 3D Enigne");
 
     mge::World world;
-    mge::sCamera camera(window.getSize().x, window.getSize().y, pi / 3.0f, 10.0f);
-    mge::sObject cube;
-
-    cube.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 0.0f}, {0.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 0.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 0.0f}, {1.0f, 0.0f, 0.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, 0.0f, 1.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {1.0f, 1.0f, 1.0f}, {0.0f, 1.0f, 1.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 1.0f}, {0.0f, 0.0f, 1.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 1.0f}, {0.0f, 1.0f, 0.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 0.0f}, {0.0f, 0.0f, 0.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({0.0f, 1.0f, 0.0f}, {0.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 1.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({0.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 0.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 0.0f}));
-    cube.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 0.0f}, {1.0f, 0.0f, 0.0f}));
     
-    world.objects.emplace_back(cube);
+    
+    mge::sCamera camera(window.getSize().x, window.getSize().y, pi / 3.0f, 25.0f);
+    camera.world_location =  mge::Vector3f(0.0f, -4.0f, 1.0f);
+    camera.world_rotation =  mge::Vector3f(0.0f, 0.5f * pi, 0.5f * pi);
+
     world.cameras.emplace_back(camera);
 
+    
+    
+    mge::sObject cube_0;
+    cube_0.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 0.0f}, {0.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 0.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 0.0f}, {1.0f, 0.0f, 0.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, 0.0f, 1.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {1.0f, 1.0f, 1.0f}, {0.0f, 1.0f, 1.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 1.0f}, {0.0f, 0.0f, 1.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 1.0f}, {0.0f, 1.0f, 0.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 0.0f}, {0.0f, 0.0f, 0.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({0.0f, 1.0f, 0.0f}, {0.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 1.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({0.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 0.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 0.0f}));
+    cube_0.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 0.0f}, {1.0f, 0.0f, 0.0f}));
+    cube_0.world_location =  mge::Vector3f(-3.0f, -3.0f, 0.0f);
+    world.objects.emplace_back(cube_0);
+    
+    
+    
+    mge::sObject cube_1;
+    cube_1.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 0.0f}, {0.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 0.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 0.0f}, {1.0f, 0.0f, 0.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, 0.0f, 1.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {1.0f, 1.0f, 1.0f}, {0.0f, 1.0f, 1.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 1.0f}, {0.0f, 0.0f, 1.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 1.0f}, {0.0f, 1.0f, 0.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 0.0f}, {0.0f, 0.0f, 0.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({0.0f, 1.0f, 0.0f}, {0.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 1.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({0.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 0.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 0.0f}));
+    cube_1.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 0.0f}, {1.0f, 0.0f, 0.0f}));
+    cube_1.world_location =  mge::Vector3f(-3.0f, 3.0f, 0.0f);
+    world.objects.emplace_back(cube_1);
+    
+    
+    
+    mge::sObject cube_2;
+    cube_2.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 0.0f}, {0.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 0.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 0.0f}, {1.0f, 0.0f, 0.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, 0.0f, 1.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {1.0f, 1.0f, 1.0f}, {0.0f, 1.0f, 1.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 1.0f}, {0.0f, 0.0f, 1.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 1.0f}, {0.0f, 1.0f, 0.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({0.0f, 0.0f, 1.0f}, {0.0f, 1.0f, 0.0f}, {0.0f, 0.0f, 0.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({0.0f, 1.0f, 0.0f}, {0.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 1.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({0.0f, 1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 0.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 0.0f}));
+    cube_2.mesh.emplace_back(mge::Plane3f({1.0f, 0.0f, 1.0f}, {0.0f, 0.0f, 0.0f}, {1.0f, 0.0f, 0.0f}));
+    cube_2.world_location =  mge::Vector3f(3.0f, 3.0f, 0.0f);
+    world.objects.emplace_back(cube_2);
+
+    
+    
     while (window.isOpen())
     {
         sf::Event event;
@@ -107,10 +154,13 @@ int main()
         
         window.clear();
         
-        //world.objects[0].Move(mge::Vector3f(0.0f, 0.0f, 0.0f));
-        //world.objects[0].Rotate(mge::Vector3f(0.0001f, 0.0001f, 0.0001f));
-        //world.objects[0].Scale(mge::Vector3f(0.0f, 0.0f, 0.0001f));
+        A += 0.001;
         
+        world.objects[0].world_location = mge::Vector3f(0.0f, 0.0f, sin(A));
+        world.objects[1].world_rotation = mge::Vector3f(0.0f, 0.0f, A);
+        world.objects[2].world_scale    = mge::Vector3f(1.0f, 2.0 - sin(A) ,2.0 + sin(A));
+
+
         for (auto visable_triangle_world: world.cameras[0].GetVisableTrianglesWorld(world.objects))
         {
             if (world.cameras[0].GetVisableTrianglesScreen(visable_triangle_world).size() > 0)

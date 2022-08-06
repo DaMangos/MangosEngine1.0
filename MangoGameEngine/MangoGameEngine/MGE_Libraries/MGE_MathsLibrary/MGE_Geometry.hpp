@@ -27,8 +27,6 @@ struct Line2f
     Vector2f GetDirection() const;
     
     Vector2f GetPointOnLine(float t) const;
-    
-    float SignedShortestDistance(const Vector2f& A) const;
 };
 
 
@@ -51,5 +49,7 @@ struct Triangle2f
 
 
 Vector2f TwoLine2fIntersection(const Line2f& line_0, const Line2f& line_1);
+
+float SignedShortestDistanceLine(const Line2f& line, const Vector2f& point);
 }
 #endif /* MGE_Geometry_hpp */

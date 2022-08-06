@@ -106,4 +106,9 @@ Vector3f Plane3fLine3fIntersection(const Vector3f& plane_normal, const Vector3f&
 {
     return line.GetPointOnLine(DotProduct(plane_normal, line.point[0] - plane_point) / DotProduct(plane_normal, line.GetDirection()));
 }
+
+float SignedShortedDistancePlane(const Vector3f& plane_normal, const Vector3f& plane_point, const Vector3f& point)
+{
+    return DotProduct(plane_normal, point - plane_point);
+}
 }
