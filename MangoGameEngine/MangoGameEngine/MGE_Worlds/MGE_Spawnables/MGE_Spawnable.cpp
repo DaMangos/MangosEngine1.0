@@ -18,7 +18,6 @@ Spawnable::Spawnable()
 }
 
 
-
 Spawnable Spawnable::Move(const Vector3f& A)
 {
     this->world_location += A;

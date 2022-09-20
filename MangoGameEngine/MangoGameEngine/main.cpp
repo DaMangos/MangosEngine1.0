@@ -175,7 +175,6 @@ int main()
                     triangle[3].position = sf::Vector2f(visable_screen_triangle.vertex[0].x, visable_screen_triangle.vertex[0].y);
                         
                     window.draw(triangle);
-                    
                 }
             }
         }

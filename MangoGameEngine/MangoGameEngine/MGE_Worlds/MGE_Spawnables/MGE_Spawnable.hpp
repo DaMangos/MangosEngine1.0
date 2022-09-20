@@ -28,6 +28,7 @@ public:
     
     Spawnable();
 
+    virtual ~Spawnable();
     
     
     Spawnable Move(const Vector3f& A);
