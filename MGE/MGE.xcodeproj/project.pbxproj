@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF35F67A28E65ABF00E1EC98 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF35F67928E65ABF00E1EC98 /* main.cpp */; };
+		FFDD0B3928E65EF400977DDE /* MGE_Matrices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B2328E65EF400977DDE /* MGE_Matrices.cpp */; };
+		FFDD0B3A28E65EF400977DDE /* MGE_Vectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B2528E65EF400977DDE /* MGE_Vectors.cpp */; };
+		FFDD0B3B28E65EF400977DDE /* MGE_Stereometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B2728E65EF400977DDE /* MGE_Stereometry.cpp */; };
+		FFDD0B3C28E65EF400977DDE /* MGE_Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B2828E65EF400977DDE /* MGE_Geometry.cpp */; };
+		FFDD0B3D28E65EF400977DDE /* MGE_sObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B2D28E65EF400977DDE /* MGE_sObject.cpp */; };
+		FFDD0B3E28E65EF400977DDE /* MGE_Spawnable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B2F28E65EF400977DDE /* MGE_Spawnable.cpp */; };
+		FFDD0B3F28E65EF400977DDE /* MGE_sCamara.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B3228E65EF400977DDE /* MGE_sCamara.cpp */; };
+		FFDD0B4028E65EF400977DDE /* MGE_World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B3528E65EF400977DDE /* MGE_World.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF35F67628E65ABF00E1EC98 /* MGE */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MGE; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF35F67928E65ABF00E1EC98 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FF35F68528E65B2300E1EC98 /* MGE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MGE.entitlements; sourceTree = "<group>"; };
+		FFDD0B2028E65EF400977DDE /* MGE_Vectors.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MGE_Vectors.hpp; sourceTree = "<group>"; };
+		FFDD0B2128E65EF400977DDE /* MGE_Stereometry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MGE_Stereometry.hpp; sourceTree = "<group>"; };
+		FFDD0B2228E65EF400977DDE /* MGE_Geometry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MGE_Geometry.hpp; sourceTree = "<group>"; };
+		FFDD0B2328E65EF400977DDE /* MGE_Matrices.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Matrices.cpp; sourceTree = "<group>"; };
+		FFDD0B2428E65EF400977DDE /* MGE_Matrices.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MGE_Matrices.hpp; sourceTree = "<group>"; };
+		FFDD0B2528E65EF400977DDE /* MGE_Vectors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Vectors.cpp; sourceTree = "<group>"; };
+		FFDD0B2628E65EF400977DDE /* MGE_MathsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGE_MathsLibrary.h; sourceTree = "<group>"; };
+		FFDD0B2728E65EF400977DDE /* MGE_Stereometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Stereometry.cpp; sourceTree = "<group>"; };
+		FFDD0B2828E65EF400977DDE /* MGE_Geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Geometry.cpp; sourceTree = "<group>"; };
+		FFDD0B2A28E65EF400977DDE /* MGE_World.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MGE_World.hpp; sourceTree = "<group>"; };
+		FFDD0B2D28E65EF400977DDE /* MGE_sObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_sObject.cpp; sourceTree = "<group>"; };
+		FFDD0B2E28E65EF400977DDE /* MGE_sObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MGE_sObject.hpp; sourceTree = "<group>"; };
+		FFDD0B2F28E65EF400977DDE /* MGE_Spawnable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_Spawnable.cpp; sourceTree = "<group>"; };
+		FFDD0B3028E65EF400977DDE /* MGE_Spawnable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MGE_Spawnable.hpp; sourceTree = "<group>"; };
+		FFDD0B3228E65EF400977DDE /* MGE_sCamara.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_sCamara.cpp; sourceTree = "<group>"; };
+		FFDD0B3328E65EF400977DDE /* MGE_sCamara.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MGE_sCamara.hpp; sourceTree = "<group>"; };
+		FFDD0B3428E65EF400977DDE /* MGE_Spawnable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGE_Spawnable.h; sourceTree = "<group>"; };
+		FFDD0B3528E65EF400977DDE /* MGE_World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_World.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF35F67428E65ABF00E1EC98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF35F66E28E65ABF00E1EC98 = {
+			isa = PBXGroup;
+			children = (
+				FF35F67828E65ABF00E1EC98 /* MGE */,
+				FF35F67728E65ABF00E1EC98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF35F67728E65ABF00E1EC98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF35F67628E65ABF00E1EC98 /* MGE */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF35F67828E65ABF00E1EC98 /* MGE */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B1E28E65EF400977DDE /* MGE_Libraries */,
+				FFDD0B2928E65EF400977DDE /* MGE_Worlds */,
+				FF35F68528E65B2300E1EC98 /* MGE.entitlements */,
+				FF35F67928E65ABF00E1EC98 /* main.cpp */,
+			);
+			path = MGE;
+			sourceTree = "<group>";
+		};
+		FFDD0B1E28E65EF400977DDE /* MGE_Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B1F28E65EF400977DDE /* MGE_MathsLibrary */,
+			);
+			path = MGE_Libraries;
+			sourceTree = "<group>";
+		};
+		FFDD0B1F28E65EF400977DDE /* MGE_MathsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B2028E65EF400977DDE /* MGE_Vectors.hpp */,
+				FFDD0B2128E65EF400977DDE /* MGE_Stereometry.hpp */,
+				FFDD0B2228E65EF400977DDE /* MGE_Geometry.hpp */,
+				FFDD0B2328E65EF400977DDE /* MGE_Matrices.cpp */,
+				FFDD0B2428E65EF400977DDE /* MGE_Matrices.hpp */,
+				FFDD0B2528E65EF400977DDE /* MGE_Vectors.cpp */,
+				FFDD0B2628E65EF400977DDE /* MGE_MathsLibrary.h */,
+				FFDD0B2728E65EF400977DDE /* MGE_Stereometry.cpp */,
+				FFDD0B2828E65EF400977DDE /* MGE_Geometry.cpp */,
+			);
+			path = MGE_MathsLibrary;
+			sourceTree = "<group>";
+		};
+		FFDD0B2928E65EF400977DDE /* MGE_Worlds */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B2A28E65EF400977DDE /* MGE_World.hpp */,
+				FFDD0B2B28E65EF400977DDE /* MGE_Spawnables */,
+				FFDD0B3528E65EF400977DDE /* MGE_World.cpp */,
+			);
+			path = MGE_Worlds;
+			sourceTree = "<group>";
+		};
+		FFDD0B2B28E65EF400977DDE /* MGE_Spawnables */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B2C28E65EF400977DDE /* MGE_sObject */,
+				FFDD0B2F28E65EF400977DDE /* MGE_Spawnable.cpp */,
+				FFDD0B3028E65EF400977DDE /* MGE_Spawnable.hpp */,
+				FFDD0B3128E65EF400977DDE /* MGE_sCamara */,
+				FFDD0B3428E65EF400977DDE /* MGE_Spawnable.h */,
+			);
+			path = MGE_Spawnables;
+			sourceTree = "<group>";
+		};
+		FFDD0B2C28E65EF400977DDE /* MGE_sObject */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B2D28E65EF400977DDE /* MGE_sObject.cpp */,
+				FFDD0B2E28E65EF400977DDE /* MGE_sObject.hpp */,
+			);
+			path = MGE_sObject;
+			sourceTree = "<group>";
+		};
+		FFDD0B3128E65EF400977DDE /* MGE_sCamara */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B3228E65EF400977DDE /* MGE_sCamara.cpp */,
+				FFDD0B3328E65EF400977DDE /* MGE_sCamara.hpp */,
+			);
+			path = MGE_sCamara;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF35F67528E65ABF00E1EC98 /* MGE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF35F68228E65ABF00E1EC98 /* Build configuration list for PBXNativeTarget "MGE" */;
+			buildPhases = (
+				FF35F67328E65ABF00E1EC98 /* Sources */,
+				FF35F67428E65ABF00E1EC98 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGE;
+			productName = MGE;
+			productReference = FF35F67628E65ABF00E1EC98 /* MGE */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF35F66F28E65ABF00E1EC98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = "Oliver Horrigan-Pierre";
+				TargetAttributes = {
+					FF35F67528E65ABF00E1EC98 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = FF35F67228E65ABF00E1EC98 /* Build configuration list for PBXProject "MGE" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF35F66E28E65ABF00E1EC98;
+			productRefGroup = FF35F67728E65ABF00E1EC98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF35F67528E65ABF00E1EC98 /* MGE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF35F67328E65ABF00E1EC98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDD0B3F28E65EF400977DDE /* MGE_sCamara.cpp in Sources */,
+				FFDD0B3A28E65EF400977DDE /* MGE_Vectors.cpp in Sources */,
+				FFDD0B3E28E65EF400977DDE /* MGE_Spawnable.cpp in Sources */,
+				FF35F67A28E65ABF00E1EC98 /* main.cpp in Sources */,
+				FFDD0B3D28E65EF400977DDE /* MGE_sObject.cpp in Sources */,
+				FFDD0B3C28E65EF400977DDE /* MGE_Geometry.cpp in Sources */,
+				FFDD0B3928E65EF400977DDE /* MGE_Matrices.cpp in Sources */,
+				FFDD0B4028E65EF400977DDE /* MGE_World.cpp in Sources */,
+				FFDD0B3B28E65EF400977DDE /* MGE_Stereometry.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF35F68028E65ABF00E1EC98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		FF35F68128E65ABF00E1EC98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		FF35F68328E65ABF00E1EC98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_ENTITLEMENTS = MGE/MGE.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3Y29BCYSK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF35F68428E65ABF00E1EC98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_ENTITLEMENTS = MGE/MGE.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3Y29BCYSK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF35F67228E65ABF00E1EC98 /* Build configuration list for PBXProject "MGE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF35F68028E65ABF00E1EC98 /* Debug */,
+				FF35F68128E65ABF00E1EC98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF35F68228E65ABF00E1EC98 /* Build configuration list for PBXNativeTarget "MGE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF35F68328E65ABF00E1EC98 /* Debug */,
+				FF35F68428E65ABF00E1EC98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF35F66F28E65ABF00E1EC98 /* Project object */;
+}
