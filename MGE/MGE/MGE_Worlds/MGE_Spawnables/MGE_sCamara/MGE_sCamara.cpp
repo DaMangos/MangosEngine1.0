@@ -46,7 +46,7 @@ std::vector<Plane3f> sCamera::GetVisableTrianglesWorld(const std::vector<sObject
     }
 
     
-    std::sort(visable_triangles.begin(), visable_triangles.end(), [](const Plane3f& A, const Plane3f& B)
+    std::sort(visable_triangles.begin(), visable_triangles.end(), [](const Plane3f& A, const Plane3f B)
     {
         for (int i = 0; i < 3; i++)
         {

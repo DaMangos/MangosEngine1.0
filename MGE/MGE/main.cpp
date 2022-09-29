@@ -34,8 +34,10 @@ int main()
     world.objects.emplace_back(cube);
 
     mge::sObject gun;
-    std::cout << gun.LoadFromObjectFromFile("MP5.obj") << "\n";
-    
+    std::cout << gun.LoadFromObjectFromFile("/Users/oliverhorriganpierre/Documents/Xcode/MGE/MGE/Gun.obj") << "\n";
+    world.objects.emplace_back(gun);
+
+    std::cout << gun.mesh.size() << "\n";
     
     while (window.isOpen())
     {

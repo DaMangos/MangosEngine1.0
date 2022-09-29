@@ -40,6 +40,7 @@
 		FFDD0B3328E65EF400977DDE /* MGE_sCamara.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MGE_sCamara.hpp; sourceTree = "<group>"; };
 		FFDD0B3428E65EF400977DDE /* MGE_Spawnable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGE_Spawnable.h; sourceTree = "<group>"; };
 		FFDD0B3528E65EF400977DDE /* MGE_World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGE_World.cpp; sourceTree = "<group>"; };
+		FFDD0B4228E660E800977DDE /* Gun.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Gun.obj; path = MGE/Gun.obj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		FF35F67828E65ABF00E1EC98 /* MGE */ = {
 			isa = PBXGroup;
 			children = (
+				FFDD0B4228E660E800977DDE /* Gun.obj */,
 				FFDD0B1E28E65EF400977DDE /* MGE_Libraries */,
 				FFDD0B2928E65EF400977DDE /* MGE_Worlds */,
 				FF35F68528E65B2300E1EC98 /* MGE.entitlements */,

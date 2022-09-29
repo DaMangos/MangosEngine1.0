@@ -82,6 +82,10 @@ bool sObject::LoadFromObjectFromFile(std::string file_name)
         }
     }
 
+    file.close();
+    
+    this->mesh.shrink_to_fit();
+    
     return true;
 }
 }
