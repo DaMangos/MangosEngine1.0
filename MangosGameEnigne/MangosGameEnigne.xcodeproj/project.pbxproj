@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFDD0B6628E72C7E00977DDE /* LinearAlgebra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B6428E72C7E00977DDE /* LinearAlgebra.cpp */; };
+		FFDD0B6928E7874300977DDE /* Spawnables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B6728E7874300977DDE /* Spawnables.cpp */; };
+		FFDD0B7028EB487700977DDE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B6E28EB487700977DDE /* main.cpp */; };
+		FFDD0B7728EC830400977DDE /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD0B7528EC830400977DDE /* Application.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF9A997C28F1E6E3009D65C9 /* MP7.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = MP7.obj; sourceTree = "<group>"; };
+		FFB36ACA28F1F54E00A9E997 /* M4.obj */ = {isa = PBXFileReference; lastKnownFileType = text; name = M4.obj; path = MangosGameEnigne/Resources/M4.obj; sourceTree = SOURCE_ROOT; };
+		FFDD0B4E28E72A9400977DDE /* MangosGameEnigne */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MangosGameEnigne; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDD0B5D28E72B3800977DDE /* MangosGameEnigne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MangosGameEnigne.entitlements; sourceTree = "<group>"; };
+		FFDD0B6428E72C7E00977DDE /* LinearAlgebra.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearAlgebra.cpp; sourceTree = "<group>"; };
+		FFDD0B6528E72C7E00977DDE /* LinearAlgebra.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearAlgebra.hpp; sourceTree = "<group>"; };
+		FFDD0B6728E7874300977DDE /* Spawnables.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Spawnables.cpp; sourceTree = "<group>"; };
+		FFDD0B6828E7874300977DDE /* Spawnables.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Spawnables.hpp; sourceTree = "<group>"; };
+		FFDD0B6E28EB487700977DDE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FFDD0B7528EC830400977DDE /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Application.cpp; path = MangosGameEnigne/Application/Application.cpp; sourceTree = SOURCE_ROOT; };
+		FFDD0B7628EC830400977DDE /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFDD0B4C28E72A9400977DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFDD0B4628E72A9400977DDE = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B5028E72A9400977DDE /* MangosGameEnigne */,
+				FFDD0B4F28E72A9400977DDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFDD0B4F28E72A9400977DDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B4E28E72A9400977DDE /* MangosGameEnigne */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFDD0B5028E72A9400977DDE /* MangosGameEnigne */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B7428EC82F300977DDE /* Application */,
+				FFDD0B6228E72C2100977DDE /* GameObjects */,
+				FFDD0B6128E72BFF00977DDE /* Libraries */,
+				FFDD0B6028E72BDE00977DDE /* Resources */,
+				FFDD0B6E28EB487700977DDE /* main.cpp */,
+				FFDD0B5D28E72B3800977DDE /* MangosGameEnigne.entitlements */,
+			);
+			path = MangosGameEnigne;
+			sourceTree = "<group>";
+		};
+		FFDD0B6028E72BDE00977DDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFB36ACA28F1F54E00A9E997 /* M4.obj */,
+				FF9A997C28F1E6E3009D65C9 /* MP7.obj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFDD0B6128E72BFF00977DDE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B6328E72C5200977DDE /* Maths */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		FFDD0B6228E72C2100977DDE /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B6728E7874300977DDE /* Spawnables.cpp */,
+				FFDD0B6828E7874300977DDE /* Spawnables.hpp */,
+			);
+			path = GameObjects;
+			sourceTree = "<group>";
+		};
+		FFDD0B6328E72C5200977DDE /* Maths */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B6428E72C7E00977DDE /* LinearAlgebra.cpp */,
+				FFDD0B6528E72C7E00977DDE /* LinearAlgebra.hpp */,
+			);
+			path = Maths;
+			sourceTree = "<group>";
+		};
+		FFDD0B7428EC82F300977DDE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FFDD0B7528EC830400977DDE /* Application.cpp */,
+				FFDD0B7628EC830400977DDE /* Application.hpp */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFDD0B4D28E72A9400977DDE /* MangosGameEnigne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFDD0B5A28E72A9400977DDE /* Build configuration list for PBXNativeTarget "MangosGameEnigne" */;
+			buildPhases = (
+				FFDD0B4B28E72A9400977DDE /* Sources */,
+				FFDD0B4C28E72A9400977DDE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MangosGameEnigne;
+			productName = MangosGameEnigne;
+			productReference = FFDD0B4E28E72A9400977DDE /* MangosGameEnigne */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFDD0B4728E72A9400977DDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = "Oliver Horrigan-Pierre";
+				TargetAttributes = {
+					FFDD0B4D28E72A9400977DDE = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = FFDD0B4A28E72A9400977DDE /* Build configuration list for PBXProject "MangosGameEnigne" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFDD0B4628E72A9400977DDE;
+			productRefGroup = FFDD0B4F28E72A9400977DDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFDD0B4D28E72A9400977DDE /* MangosGameEnigne */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFDD0B4B28E72A9400977DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDD0B7728EC830400977DDE /* Application.cpp in Sources */,
+				FFDD0B6928E7874300977DDE /* Spawnables.cpp in Sources */,
+				FFDD0B7028EB487700977DDE /* main.cpp in Sources */,
+				FFDD0B6628E72C7E00977DDE /* LinearAlgebra.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FFDD0B5828E72A9400977DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		FFDD0B5928E72A9400977DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		FFDD0B5B28E72A9400977DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_WARN_IMPLICIT_FALLTHROUGH = NO;
+				CODE_SIGN_ENTITLEMENTS = MangosGameEnigne/MangosGameEnigne.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3Y29BCYSK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_VERSION = "";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFDD0B5C28E72A9400977DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_WARN_IMPLICIT_FALLTHROUGH = NO;
+				CODE_SIGN_ENTITLEMENTS = MangosGameEnigne/MangosGameEnigne.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3Y29BCYSK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_VERSION = "";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFDD0B4A28E72A9400977DDE /* Build configuration list for PBXProject "MangosGameEnigne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDD0B5828E72A9400977DDE /* Debug */,
+				FFDD0B5928E72A9400977DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFDD0B5A28E72A9400977DDE /* Build configuration list for PBXNativeTarget "MangosGameEnigne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDD0B5B28E72A9400977DDE /* Debug */,
+				FFDD0B5C28E72A9400977DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFDD0B4728E72A9400977DDE /* Project object */;
+}
