@@ -24,7 +24,7 @@ namespace mge
         
         
         Object m4;
-        
+                
         m4.SetColour(float3(1.0f, 0.0f, 0.5f));
         
         m4.LoadFromFile("M4.obj");
@@ -33,15 +33,18 @@ namespace mge
         
         
         
-        Light light;
+        Object mp7;
         
-        light.SetColour(1.0f);
+        mp7.Scale(2.0f);
+                
+        mp7.SetColour(float3(0.0f, 1.0f, 0.5f));
         
-        light.Move(1.0f);
+        mp7.LoadFromFile("MP7.obj");
         
-        light.Scale(10.f);
+        this->world->objects.emplace_back(mp7);
         
-        this->world->lights.emplace_back(light);
+        
+        
         
         
         Camera camera;
@@ -56,6 +59,13 @@ namespace mge
     
     void App::Run()
     {
+        float ahlpha;
+        
+        world->objects.at(0).Move(float3(0.0f, 10.0f, 0.0f));
+        world->objects.at(1).Move(float3(0.0f, 20.0f, 0.0f));
+
+        
+        
         while (window->isOpen())
         {
             sf::Event event;
@@ -70,54 +80,56 @@ namespace mge
                 }
             }
             
+            ahlpha += 0.5f;
+            
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().W))
             {
-                world->cameras.at(0).Move(cos(world->cameras.at(0).rotation.z) * 0.01f, sin(world->cameras.at(0).rotation.z) * 0.01f, 0.0f);
+                world->cameras.at(0).Move(cos(world->cameras.at(0).rotation.z) * 0.1f, sin(world->cameras.at(0).rotation.z) * 0.1f, 0.0f);
             }
             
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().S))
             {
-                world->cameras.at(0).Move(-cos(world->cameras.at(0).rotation.z) * 0.01f, -sin(world->cameras.at(0).rotation.z) * 0.01f, 0.0f);
+                world->cameras.at(0).Move(-cos(world->cameras.at(0).rotation.z) * 0.1f, -sin(world->cameras.at(0).rotation.z) * 0.1f, 0.0f);
             }
             
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().A))
             {
-                world->cameras.at(0).Move(-sin(world->cameras.at(0).rotation.z) * 0.01f, cos(world->cameras.at(0).rotation.z) * 0.01f, 0.0f);
+                world->cameras.at(0).Move(-sin(world->cameras.at(0).rotation.z) * 0.1f, cos(world->cameras.at(0).rotation.z) * 0.1f, 0.0f);
             }
             
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().D))
             {
-                world->cameras.at(0).Move(sin(world->cameras.at(0).rotation.z) * 0.01f, -cos(world->cameras.at(0).rotation.z) * 0.01f, 0.0f);
+                world->cameras.at(0).Move(sin(world->cameras.at(0).rotation.z) * 0.1f, -cos(world->cameras.at(0).rotation.z) * 0.1f, 0.0f);
             }
             
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().Space))
             {
-                world->cameras.at(0).Move(0.0f, 0.0f, 0.005f);
+                world->cameras.at(0).Move(0.0f, 0.0f, 0.1f);
             }
             
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().LShift))
             {
-                world->cameras.at(0).Move(0.0f, 0.0f, -0.005f);
+                world->cameras.at(0).Move(0.0f, 0.0f, -0.1f);
             }
             
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().Up))
             {
-                world->cameras.at(0).Rotate(0.0f, -0.005f, 0.0f);
+                world->cameras.at(0).Rotate(0.0f, -0.01f, 0.0f);
             }
             
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().Down))
             {
-                world->cameras.at(0).Rotate(0.0f, 0.005f, 0.0f);
+                world->cameras.at(0).Rotate(0.0f, 0.01f, 0.0f);
             }
             
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().Left))
             {
-                world->cameras.at(0).Rotate(0.0f, 0.0f, 0.005f);
+                world->cameras.at(0).Rotate(0.0f, 0.0f, 0.01f);
             }
             
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().Right))
             {
-                world->cameras.at(0).Rotate(0.0f, 0.0f, -0.005f);
+                world->cameras.at(0).Rotate(0.0f, 0.0f, -0.01f);
             }
             
             if(sf::Keyboard::isKeyPressed(sf::Keyboard().Num0))
@@ -129,7 +141,7 @@ namespace mge
             {
                 world->cameras.at(0).Rotate(-0.01f, 0.0f, 0.0f);
             }
-                                    
+                                                
             window->clear(sf::Color::White);
             
             world->cameras.at(0).DrawView(world->objects, world->lights, Draw);
