@@ -16,6 +16,7 @@
 /* Begin PBXFileReference section */
 		FF9A997C28F1E6E3009D65C9 /* MP7.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = MP7.obj; sourceTree = "<group>"; };
 		FFB36ACA28F1F54E00A9E997 /* M4.obj */ = {isa = PBXFileReference; lastKnownFileType = text; name = M4.obj; path = MangosGameEnigne/Resources/M4.obj; sourceTree = SOURCE_ROOT; };
+		FFB36ACB28F2501600A9E997 /* cube.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
 		FFDD0B4E28E72A9400977DDE /* MangosGameEnigne */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MangosGameEnigne; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDD0B5D28E72B3800977DDE /* MangosGameEnigne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MangosGameEnigne.entitlements; sourceTree = "<group>"; };
 		FFDD0B6428E72C7E00977DDE /* LinearAlgebra.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearAlgebra.cpp; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 			children = (
 				FFB36ACA28F1F54E00A9E997 /* M4.obj */,
 				FF9A997C28F1E6E3009D65C9 /* MP7.obj */,
+				FFB36ACB28F2501600A9E997 /* cube.obj */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

@@ -302,8 +302,6 @@ namespace mge
         bool LiesOnPlane(const float3& A) const;
         
         bool Inside(const float3& A) const;
-        
-        bool Behind(const triangle3& A) const;
     };
 
 

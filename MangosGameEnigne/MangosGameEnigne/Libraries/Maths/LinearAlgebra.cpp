@@ -199,7 +199,7 @@ namespace mge
         return *this / this->Length();
     }
 
-    float float3::Angle(const float3& A) const
+    float float3::Angle(const  float3& A) const
     {
         return acos(this->Dot(A) / (this->Length() * A.Length()));
     }
@@ -619,7 +619,7 @@ namespace mge
 
     float2 line2::PointOnLine(float t) const
     {
-        return this->p[0] + ((this->p[1] - this->p[0]) * t);
+        return this->p[0] + this->Direction() * t;
     }
 
     bool line2::LiesOnLine(const float2& A) const
@@ -653,7 +653,7 @@ namespace mge
 
     float3 line3::PointOnLine(float t) const
     {
-        return this->p[0] + ((this->p[1] - this->p[0]) * t);
+        return this->p[0] + this->Direction() * t;
     }
 
     bool line3::LiesOnLine(const float3& A) const
@@ -734,10 +734,11 @@ namespace mge
 
     float3x3 triangle3::TransitionMatrix() const
     {
-        float3 a = (this->v[1] - this->v[0]).Normalize();
-        float3 b = this->Normal().Cross(a);
-        
-        return float3x3(a, b, this->Normal()).Inverse();
+        float3 normal = this->Normal();
+        float theta = this->Normal().SphericalTheta();
+        float phi   = this->Normal().SphericalPhi();
+
+        return float3x3(cos(theta) * cos(phi), cos(theta) * sin(phi), -sin(theta), -sin(phi), cos(phi), 0.0f, normal.x, normal.y, normal.z);
     }
 
     float2 triangle3::ReduceDimensionsOfPoint(const float3& A) const
@@ -767,33 +768,20 @@ namespace mge
         return false;
     }
 
-    bool triangle3::Behind(const triangle3& A) const
-    {
-        for (auto v: this->v)
-        {
-            if (v.Length() > Intersection(A, line3(v, 0.0f)).Length() && A.Inside(Intersection(A, line3(v, 0.0f))))
-            {
-                return true;
-            }
-        }
-        
-        return false;
-    }
-
     float2 Intersection(const line2& A, const line2& B)
     {
-        return A.PointOnLine(float2x2(A[0].x - B[0].x, B[0].x - B[1].x, A[0].y - B[0].y, B[0].y - B[1].y).Det() /
-                             float2x2(A[0].x - A[1].x, B[0].x - B[1].x, A[0].y - A[1].y, B[0].y - B[1].y).Det());
+        return A.PointOnLine((float2x2(B[0].x - A[0].x, B[1].x - B[0].x, A[0].y - B[0].y, B[0].y - B[1].y).Det() /
+                              float2x2(A[1].x - A[0].x, B[0].x - B[1].x, A[0].y - A[1].y, B[1].y - B[0].y).Det())) ;
     }
 
     float3 Intersection(const triangle3& plane, const line3& line)
     {
-        return line.PointOnLine(plane.Normal().Dot(line[0] - plane[0]) / plane.Normal().Dot(line.Direction()));
+        return line.PointOnLine(plane.Normal().Dot(plane[0] - line[0]) / plane.Normal().Dot(line.Direction()));
     }
 
     float3 Intersection(const float3& plane_normal, const float3& plane_point, const line3& line)
     {
-        return line.PointOnLine(plane_normal.Dot(line[0] - plane_point) / plane_normal.Dot(line.Direction()));
+        return line.PointOnLine(plane_normal.Dot(plane_point - line[0]) / plane_normal.Dot(line.Direction()));
     }
 
     float ShortestDistance(const line2& line, const float2& point)

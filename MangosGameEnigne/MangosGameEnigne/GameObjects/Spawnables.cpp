@@ -83,11 +83,7 @@ namespace mge
     
     bool Object::Polygon::operator<(const Polygon& A) const
     {
-        //return this->vertices.Behind(A.vertices);
-        // This causes a memory leak but i dont know why.
-        
         return this->vertices.Center().LengthSquared() > A.vertices.Center().LengthSquared();
-        //this is a hack that somewhat does what is intended.
     }
     
     Object::Polygon Object::GetPolygon(const std::array<std::size_t, 7>& polygon_index) const
@@ -388,8 +384,8 @@ namespace mge
                     if(is_vertex_visable[j])
                     {
                         out.emplace_back(A[j],
-                                         Intersection(B,line2(A[(j + 1) % 3], A[j])),
-                                         Intersection(B,line2(A[(j + 2) % 3], A[j])));
+                                         Intersection(line2(A[(j + 1) % 3], A[j]),    B),
+                                         Intersection(line2(A[(j + 2) % 3], A[j]),    B));
                     }
                 }
             }
@@ -401,12 +397,12 @@ namespace mge
                     if(is_vertex_visable[j] && is_vertex_visable[(j + 1) % 3])
                     {
                         out.emplace_back(A[j],
-                                         Intersection(B,line2(A[(j + 2) % 3], A[(j + 1) % 3])),
-                                         Intersection(B,line2(A[(j + 2) % 3], A[j])));
+                                         Intersection(line2(A[(j + 2) % 3], A[(j + 1) % 3]),    B),
+                                         Intersection(line2(A[(j + 2) % 3], A[j]),              B));
                         
                         out.emplace_back(A[j],
                                          A[(j + 1) % 3],
-                                         Intersection(B,line2(A[(j + 2) % 3], A[(j + 1) % 3])));
+                                         Intersection(line2(A[(j + 2) % 3], A[(j + 1) % 3]),    B));
                     }
                 }
             }
