@@ -1,4 +1,2 @@
-# MangosGameEngine
-My first attempt at creating a 3d engine with SFML.
-
-Hope you enjoy!
+# MangosEngine1.0
+A 3-D graphics engine build on SFML.
